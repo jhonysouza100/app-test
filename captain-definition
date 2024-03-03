@@ -10,7 +10,7 @@
     "ENV NODE_ENV production",
     "RUN npm run build",
     "ENV PORT 4173",
-    "EXPOSE 8081",
+    "EXPOSE 1999",
     "CMD [ \"npm\",\"run\", \"preview\" ]"
   ]
 } 

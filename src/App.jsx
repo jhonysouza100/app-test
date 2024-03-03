@@ -17,6 +17,11 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+      <h2>{import.meta.env.VITE_HOLA_MUNDO}</h2>
+      <h3>{`${import.meta.env.PROD ? "Production" : "Development"}`}</h3>
+      <h3>{`${import.meta.env.SSR ? "Server" : "Local"}`}</h3>
+      <h3>{`Mode: ${import.meta.env.MODE}`}</h3>
+      <h3>{`Base URL: ${import.meta.env.BASE_URL}`}</h3>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}

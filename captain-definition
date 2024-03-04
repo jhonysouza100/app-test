@@ -6,6 +6,7 @@
     "COPY ./package.json /app/",
     "RUN npm install && npm cache clean --force",
     "COPY ./ /app",
+    "ENV NODE_ENV production",
     "RUN npm run build",
     "CMD [ \"npm\",\"run\", \"preview\" ]"
   ]

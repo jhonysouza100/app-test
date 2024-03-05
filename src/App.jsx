@@ -17,7 +17,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <h2>{`${import.meta.env.CAPROVER_GIT_COMMIT_SHA}`}</h2>
+      <h2>{`${import.meta.env.VITE_HOLA_MUNDO}`}</h2>
       <h3>{`${import.meta.env.PROD ? "Production" : "Development"}`}</h3>
       <h3>{`${import.meta.env.SSR ? "Server" : "Local"}`}</h3>
       <h3>{`Mode: ${import.meta.env.MODE}`}</h3>
